@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     //Grunt concat --> Combine JS files
     concat: {
       js: {
-        src: ['public/components/javascripts/*.js'],
+        src: ['public/components/javascripts/**/*.js'],
         dest: 'compiled/compiled.js',
       },
     },
