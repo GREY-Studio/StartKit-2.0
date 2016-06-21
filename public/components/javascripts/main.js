@@ -10,6 +10,7 @@ require.config({
 
     'angular': '/static/angular/angular',
     'jquery': '/static/jquery/dist/jquery',
+    'angular-route': '/static/angular-route/angular-route',
 
     // Load the modules
     'coreModule': '/components/javascripts/core/coreModule',
@@ -23,12 +24,16 @@ require.config({
       'deps': [ 'jquery' ]
     },
 
-    'themeModule': {
+    'angular-route': {
       'deps': [ 'angular' ]
     },
 
+    'themeModule': {
+      'deps': [ 'angular-route' ]
+    },
+
     'coreModule': {
-      'deps': [ 'angular', 'themeModule' ]
+      'deps': [ 'angular-route', 'themeModule' ]
     }
 
   }

@@ -32,6 +32,12 @@ app.use('/', api);
 // serve static content in Bower to uri extension /static
 app.use('/static', express.static(__dirname + '/bower_components'));
 
+
+// angular reload fallback
+app.use(function(req, res) {
+    res.sendfile(__dirname + '/public/index.html');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
