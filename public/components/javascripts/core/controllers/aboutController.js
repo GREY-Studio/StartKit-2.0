@@ -9,6 +9,7 @@ define(function() {
     .module('coreModule')
     .registerController('aboutController', ['$scope', function($scope) {
       $scope.title = "About";
+      $scope.pageData = "about";
     }]);
 
 });

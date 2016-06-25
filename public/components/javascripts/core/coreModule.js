@@ -5,7 +5,7 @@
 
 define(['core/runners/logRunner'], function(logRunner) {
 
-  var coreModule = angular.module('coreModule', ['ngRoute', 'themeModule']);
+  var coreModule = angular.module('coreModule', ['ngRoute', 'ngAnimate', 'themeModule']);
 
   coreModule.run(logRunner);
 

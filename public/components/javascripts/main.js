@@ -9,9 +9,10 @@ require.config({
   paths: {
 
     // Paths to https CDN content - with static fallback in Bower
-    'angular': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min', '/static/angular/angular'],
-    'jquery': ['https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min', '/static/jquery/dist/jquery'],
-    'angular-route': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route', '/static/angular-route/angular-route'],
+    'angular': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min', '/static/angular/angular.min'],
+    'jquery': ['https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min', '/static/jquery/dist/jquery.min'],
+    'angular-route': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min', '/static/angular-route/angular-route.min'],
+    'angular-animate': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min', '/static/angular-animate/angular-animate.min'],
 
     // Load the modules
     'coreModule': '/components/javascripts/core/coreModule',
@@ -29,12 +30,16 @@ require.config({
       'deps': [ 'angular' ]
     },
 
+    'angular-animate': {
+      'deps': [ 'angular' ]
+    },
+
     'themeModule': {
       'deps': [ 'angular-route' ]
     },
 
     'coreModule': {
-      'deps': [ 'angular-route', 'themeModule' ]
+      'deps': [ 'angular-route', 'angular-animate', 'themeModule' ]
     }
 
   }
