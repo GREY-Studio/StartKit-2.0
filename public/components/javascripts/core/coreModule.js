@@ -13,12 +13,6 @@ define(['core/runners/logRunner'], function(logRunner) {
     coreModule.registerController = $controllerProvider.register;
   }]);
 
-  /*
-  coreModule.config(['$locationProvider', function($locationProvider) {
-    $locationProvider.html5Mode(true);
-  }]);
-  */
-
   // Angular routing
   coreModule.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 
