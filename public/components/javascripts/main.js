@@ -50,4 +50,5 @@ require.config({
 // Require coreModule
 require(['coreModule'], function() {
   // Application ready!
+  // Serving document...
 });

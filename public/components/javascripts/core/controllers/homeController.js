@@ -9,7 +9,6 @@ define(function() {
     .module('coreModule')
     .registerController('homeController', ['$scope', function($scope) {
       $scope.title = "Home";
-      $scope.pageData = "home";
     }]);
 
 });

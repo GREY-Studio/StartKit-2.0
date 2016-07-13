@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     //Grunt watch --> Update concat on change
     watch: {
       socket: {
-        files: ['public/components/javascripts/*.js'],
+        files: ['public/components/javascripts/**/*.js'],
         tasks: ['concat:js'],
       },
     },

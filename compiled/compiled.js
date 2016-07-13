@@ -22,7 +22,6 @@ define(function() {
     .module('coreModule')
     .registerController('aboutController', ['$scope', function($scope) {
       $scope.title = "About";
-      $scope.pageData = "about";
     }]);
 
 });
@@ -38,14 +37,13 @@ define(function() {
     .module('coreModule')
     .registerController('homeController', ['$scope', function($scope) {
       $scope.title = "Home";
-      $scope.pageData = "home";
     }]);
 
 });
 
 
 //------------------------------------//
-// Home Controller
+// Main Controller
 //------------------------------------//
 
 define(function() {
@@ -53,7 +51,7 @@ define(function() {
   var coreModule = angular.module('coreModule');
 
   coreModule.controller('mainController', ['$scope', function($scope) {
-    $scope.title = "Hello World!";
+
   }]);
 
 });
@@ -209,6 +207,7 @@ require.config({
 // Require coreModule
 require(['coreModule'], function() {
   // Application ready!
+  // Serving document...
 });
 
 

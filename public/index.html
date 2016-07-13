@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="/stylesheets/style.css"  title="Style CSS" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/style.css" title="Style CSS" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="Forum">
     <meta property="og:site_name" content="Forum">
@@ -26,9 +26,12 @@
   <body data-ng-controller="mainController">
 
     <!-- Page Container -->
-    <div data-ng-view="" data-page="{{ pageData }}"></div>
+    <div data-ng-view="" data-page="{{ title | lowercase }}"></div>
     <!-- End Page Container -->
 
+    <!-- Initial Scripts  -->
     <script src="/static/requirejs/require.js" type="text/javascript" data-main="components/javascripts/main.js"></script>
+    <!-- End Initial Scripts -->
+
   </body>
 </html>
